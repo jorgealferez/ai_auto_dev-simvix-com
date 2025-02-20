@@ -1,12 +1,15 @@
 <?php
-// Archivo: welcome.blade.php
+// Archivo principal que integra la funcionalidad con la estructura original de la aplicación
+// Extiende la plantilla base definida en layouts.app
+?>
+@extends('layouts.app')
 
-@extends('layout')
+@section('title', 'Inicio')
 
 @section('content')
-<div class="text-center">
-    <h1 class="display-4">Bienvenido a la Revolución Tecnológica</h1>
-    <p class="lead">Descubre cómo la inteligencia artificial transforma productos y servicios.</p>
-    <a href="#" class="btn btn-primary btn-lg">Explora nuestro Producto</a>
-</div>
+    <!-- Contenido principal de la página de inicio -->
+    <section>
+        <h2>Bienvenido a nuestra Startup de Innovación en IA</h2>
+        <p>Descubre nuestros productos y servicios diseñados para transformar la tecnología.</p>
+    </section>
 @endsection
