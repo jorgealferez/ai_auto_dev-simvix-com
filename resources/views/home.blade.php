@@ -1,7 +1,4 @@
-<?php
-// Archivo principal que integra la funcionalidad con la estructura original de la aplicación
-// Extiende la plantilla base definida en layouts.app
-?>
+
 @extends('layouts.app')
 
 @section('title', 'Inicio')
