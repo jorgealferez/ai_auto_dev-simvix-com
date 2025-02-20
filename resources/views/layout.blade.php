@@ -1,7 +1,4 @@
-<?php
-// Archivo: layout.blade.php
-// Descripción: Plantilla principal de la aplicación, que integra la funcionalidad de la interfaz moderna responsiva con Bootstrap y la identidad corporativa.
-?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
