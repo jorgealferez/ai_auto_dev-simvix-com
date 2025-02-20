@@ -1,8 +1,4 @@
-<?php
-// Archivo index.php: integración del código funcional en el código original
 
-// Se puede agregar lógica PHP adicional aquí si es necesario
-?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
