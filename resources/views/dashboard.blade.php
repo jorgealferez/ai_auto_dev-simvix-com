@@ -1,15 +1,6 @@
-<?php
-// Ejemplo: Datos de la IA y del gráfico. En un escenario real, estos datos provendrían de una base de datos o de otra fuente de datos.
-$aiInsights = [
-    'mensaje' => 'Análisis realizado con éxito.',
-    'puntaje' => 85
-];
 
-$data = [
-    'labels' => ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'],
-    'values' => [10, 20, 30, 25, 15, 45]
-];
-?>
+
+
 
 <!DOCTYPE html>
 <html lang="es">
