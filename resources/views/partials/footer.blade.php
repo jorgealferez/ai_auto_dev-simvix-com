@@ -1,6 +1,3 @@
-<?php
-// Aquí se integraría el código original si existiera
-// Código original: []
 
 /* Pie de página corporativo */
 ?>
