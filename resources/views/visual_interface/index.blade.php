@@ -1,11 +1,4 @@
-<?php
-/**
- * Vista para la definición y diseño de la identidad visual corporativa.
- * Se utiliza un enfoque minimalista e innovador para plasmar el concepto
- * mediante el uso de paletas de colores frescas, tipografías modernas
- * y prototipos interactivos.
- */
-?>
+
 
 @extends('layouts.app')
 
