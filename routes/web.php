@@ -1,10 +1,9 @@
 <?php
 
+// Archivo de rutas que integra la funcionalidad principal en el proyecto
+
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\HomeController;
 
-// Código original
-// (Aquí se pueden agregar otras rutas o lógica del proyecto)
-
-// Integración de la funcionalidad: Ruta para el dashboard interactivo
-Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+// Ruta principal que carga la interfaz de usuario
+Route::get('/', [HomeController::class, 'index'])->name('home');
