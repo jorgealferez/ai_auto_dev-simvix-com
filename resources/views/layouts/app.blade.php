@@ -1,46 +1,58 @@
 <?php
-// Este es el archivo principal del layout, por ejemplo: layout.blade.php
+// Archivo index.php: integración del código funcional en el código original
+
+// Se puede agregar lógica PHP adicional aquí si es necesario
 ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'Inicio')</title>
-    <!-- Comentario: Agrega aquí tus archivos CSS o frameworks para lograr un diseño moderno -->
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <title>Aplicación Responsive</title>
+    <!-- Incluimos Bootstrap 5 para diseño responsive -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <style>
+        /* Ejemplo de regla para mejorar la apariencia */
+        body {
+            padding-top: 56px;
+        }
+    </style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <h1>Nombre de la Startup</h1>
-            <nav>
-                <ul>
-                    <li><a href="{{ url('/') }}">Inicio</a></li>
-                    <li><a href="{{ url('/productos') }}">Productos</a></li>
-                    <li><a href="{{ url('/servicios') }}">Servicios</a></li>
-                    <!-- Puedes agregar más elementos de menú según sea necesario -->
+    <!-- Barra de navegación responsive con Bootstrap -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mi Aplicación</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
                 </ul>
-            </nav>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <!-- Área de contenido principal -->
-    <main>
-        <div class="container">
-            @yield('content')
-        </div>
-    </main>
+    <!-- Contenedor principal para el contenido de la vista -->
+    <div class="container">
+        <?php
+        // Aquí se puede incluir el contenido dinámico de la página
+        // Por ejemplo, incluir otro archivo PHP que contenga la funcionalidad específica
+        // include 'contenido.php';
+        ?>
+    </div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; <?php echo date('Y'); ?> Nombre de la Startup. Todos los derechos reservados.</p>
-        </div>
-    </footer>
-
-    <!-- Comentario: Agrega aquí tus archivos JS para funcionalidades modernas -->
-    <script src="{{ asset('js/app.js') }}"></script>
+    <!-- Scripts de Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
