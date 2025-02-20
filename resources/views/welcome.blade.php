@@ -1,6 +1,3 @@
-<?php
-// Archivo integrado en el código original
-// En este archivo se extiende el layout principal y se define la sección de contenido
 
 @extends('layouts.app')
 
