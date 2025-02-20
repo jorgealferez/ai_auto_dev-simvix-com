@@ -1,12 +1,4 @@
-<?php
-// Archivo principal (Código original)
-// Puedes agregar lógica adicional aquí según avance el proyecto
 
-// Función simulada para generar URL, en caso de Laravel puedes reemplazarla por la función nativa url()
-function url($path) {
-    return $path;
-}
-?>
 
 <!DOCTYPE html>
 <html lang="es">
